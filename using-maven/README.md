@@ -33,6 +33,13 @@
 - http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
 - http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
 
+#### Commands to build image
+In this exercise I am using maven-plugin to generate docker images. Following command is being used to do so
+```
+$ mvn spring-boot:build-image
+$ mvn spring-boot:build-image -DskipTests (if you want to skip tests)
+```
+
 #### Commands
 ```
 docker run -p 9411:9411 openzipkin/zipkin:2.23
